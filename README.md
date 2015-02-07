@@ -9,7 +9,7 @@ This is an presentation for building scalable, extendable and easy to maintain p
 * [Service layer pattern](http://programmers.stackexchange.com/questions/162399/how-essential-is-it-to-make-a-service-layer)
 * [Repository pattern](http://msdn.microsoft.com/en-us/library/ff649690.aspx)  
  
-It is based on my experience with architecting/extending/working on applications with such structures. The presentation is accompanied with basic solution, which shows the practices in action and which I use as template when I design projects based on that structure.
+It is based on my experience with architecting/extending/working on applications with such structures. The presentation is accompanied with basic solution, which shows the practices in action and which I use as template when I design projects based on these patterns.
 
 English version: [LooselyCoupledMVCStructure_EN.pdf](https://github.com/raste/LooselyCoupledStructure/blob/master/LooselyCoupledMVCStructure_EN.pdf)  
 Bulgarian version: [LooselyCoupledMVCStructure_BG.pdf](https://github.com/raste/LooselyCoupledStructure/blob/master/LooselyCoupledMVCStructure_BG.pdf)
