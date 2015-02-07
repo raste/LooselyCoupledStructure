@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div style="min-width:400px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        @Html.Partial("_Header")
+
+        <div style="min-height: 300px;">
+              @RenderBody()
+        </div>
+      
+         @Html.Partial("_Footer")
+    </div>
+</body>
+</html>

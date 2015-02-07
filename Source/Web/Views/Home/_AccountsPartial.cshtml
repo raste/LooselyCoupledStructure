@@ -1,0 +1,39 @@
+﻿@model Web.Models.Home.HomeAccountsPartialViewModel
+
+<br />
+
+@if (Model.Users.Count > 0)
+{
+    @ShowUsers()
+}
+else
+{
+    @Summary("No Users in context")
+}
+
+@helper ShowUsers()
+{
+    @Summary("Users in context")
+    <table style="border:1px solid Gray">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Role</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@helper Summary(string text)
+{
+    <span style="font-weight:bold;">@text</span>
+}

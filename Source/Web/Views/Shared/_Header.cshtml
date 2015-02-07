@@ -1,0 +1,31 @@
+﻿@{
+    bool authenticated = Context.User.Identity.IsAuthenticated;
+}
+
+@Html.ActionLink("Home", "Index")
+@Html.ActionLink("AdminIndex", "Admin")
+@Html.ActionLink("ManagerIndex", "Manager")
+
+<span> | </span>
+
+@if (authenticated == false)
+{
+    using (Html.BeginForm("LogIn", null, FormMethod.Post, new { style="display:inline" }))
+    {
+        <span>admin, admin default sign in</span>
+
+        @Html.TextBox("username")
+        @Html.Password("password")
+        
+        <button type="submit">Log In</button>
+    }
+}
+else
+{
+    using (Html.BeginForm("LogOut", null, FormMethod.Post, new { style = "display:inline" }))
+    {
+    <button type="submit">Log out</button>
+    }
+}
+
+<hr />
