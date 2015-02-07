@@ -24,16 +24,16 @@ In order to open the solution you will need Visual Studio 2012 or greater. To ru
 
 The application uses Code First approach with databases, which means that the database will be created on first run. But before that you need to configure the connection strings.
 
-Location in [web.config](https://github.com/raste/LooselyCoupledStructure/blob/master/Source/Web/Web.config) and [app.config](https://github.com/raste/LooselyCoupledStructure/blob/master/Source/DB/App.config) the following lines:
+Locate in [web.config](https://github.com/raste/LooselyCoupledStructure/blob/master/Source/Web/Web.config) and [app.config](https://github.com/raste/LooselyCoupledStructure/blob/master/Source/DB/App.config) the following lines:
 ```
 <connectionStrings>
     <add name="DBContext" providerName="System.Data.SqlClient" connectionString="Server=(local);Database=MVCTemplate;Integrated Security=True;" />
     <add name="ElmahConnectionString" providerName="System.Data.SqlClient" connectionString="Server=(local);Database=MVCTemplate;Integrated Security=True;" />
   </connectionStrings>
 ```
-Replace `(local)` in `Server=(local);` with the name of your SQL Server instance. 
+Replace `(local)` in `Server=(local);` with the name of your SQL Server instance. You can substitute `MVCTemplate` in `Database=MVCTemplate;` if you want to change the name of the created database.
 
-Build the solution. Some of the needed packages should be automatically downloaded from NUGET. If that doesn't happen, go to `TOOLS > NuGet package Manager > Package Manager Settings > check Allow NuGet to download missing packages`. If that doesn't help or some of the packages cannot be downloaded, get [packages.zip](https://github.com/raste/LooselyCoupledStructure/blob/master/Packages/packages.zip) and extract it in the directory of the solution (this is archive of the used packages).
+When you build the solution the needed packages will be automatically downloaded from NUGET. If that doesn't happen, go to `TOOLS > NuGet package Manager > Package Manager Settings > check Allow NuGet to download missing packages`. If that doesn't help or some of the packages cannot be downloaded, get [packages.zip](https://github.com/raste/LooselyCoupledStructure/blob/master/Packages/packages.zip) and extract it in the directory of the solution (this is archive of the used packages).
 
 ### Schemes in presentation
 
