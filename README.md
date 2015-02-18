@@ -2,6 +2,8 @@
 
 ### About
 
+December 2013 – February 2014
+
 This is an presentation for building scalable, extendable and easy to maintain project structure. It follows these practices/patterns:
 * [Loose coupling](http://en.wikipedia.org/wiki/Loose_coupling)
 * [Single responsibility principle](http://en.wikipedia.org/wiki/Single_responsibility_principle)
